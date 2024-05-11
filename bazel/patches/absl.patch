@@ -1,0 +1,12 @@
+diff --git a/absl/base/config.h b/absl/base/config.h
+index 05d960b6..fdb6d240 100644
+--- a/absl/base/config.h
++++ b/absl/base/config.h
+@@ -442,7 +442,6 @@ static_assert(ABSL_INTERNAL_INLINE_NAMESPACE_STR[0] != 'h' ||
+ #elif defined(__linux__) || defined(__APPLE__) || defined(__FreeBSD__) || \
+     defined(_AIX) || defined(__ros__) || defined(__OpenBSD__) ||          \
+     defined(__NetBSD__)
+-#define ABSL_HAVE_PTHREAD_GETSCHEDPARAM 1
+ #endif
+ 
+ // ABSL_HAVE_SCHED_GETCPU

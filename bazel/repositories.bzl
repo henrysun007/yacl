@@ -140,6 +140,10 @@ def _com_google_absl():
         sha256 = "5366d7e7fa7ba0d915014d387b66d0d002c03236448e1ba9ef98122c13b35c36",
         type = "tar.gz",
         strip_prefix = "abseil-cpp-20230125.3",
+        patch_args = ["-p1"],
+        patches = [
+            "@yacl//bazel:patches/absl.patch",
+        ],
         urls = [
             "https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz",
         ],
